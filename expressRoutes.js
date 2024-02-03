@@ -11,10 +11,19 @@ app.get('/dogs', function(req, res) {
     res.send("WOOOOOOF!!!")
 })
 
-app.get('/dogs', function(req, res) {
+app.get('/cats', function(req, res) {
     console.log("dogssssss")
     res.send("MEOWMEOWMEOWWWWW!!!")
 })
+
+app.get('/chickens', function(req, res){
+    res.send('BOCK BOCK (get request')
+})
+
+app.post('/chickens', function createChicken(req, res){
+    res.send('YOU MADE A CHICKKKKYYYY (post request)')
+})
+
 
 
 app.listen(3000, () => {
