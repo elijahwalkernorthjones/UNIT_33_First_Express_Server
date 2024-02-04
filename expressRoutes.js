@@ -35,10 +35,15 @@ const greetings = {
 
 app.get("/greet/:language", function(req, res){
     const lang = req.params.language;
-    res.send("Greetings!!!")
+    const greeting = greetings[lang]
+    res.send(greeting);
 })
 
 
+app.get('/search', function(req, res){
+    const {term, sort} = req.query;
+    return res.send("SEARCH PAGE!")
+})
 
 
 app.listen(3000, () => {
