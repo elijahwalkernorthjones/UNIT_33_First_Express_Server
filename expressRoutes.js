@@ -25,6 +25,18 @@ app.post('/chickens', function createChicken(req, res){
 })
 
 
+const greetings = {
+    en: "hello",
+    fr: "bonjour",
+    sp: "hola",
+    js: "konichiwa",
+    ru: "privet"
+}
+
+
+
+
+
 
 app.listen(3000, () => {
     console.log("Server running on port 3000")
