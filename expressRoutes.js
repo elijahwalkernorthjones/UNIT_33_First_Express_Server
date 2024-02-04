@@ -57,8 +57,22 @@ app.get('/search', function(req, res){
 
 /** using req.headers to get info on the headers of requests*/
 app.get('/show-me-headers', function (req, res){
+    console.log(req.rawHeaders);
+    console.log(req.headers);
     return res.send(req.headers);
 })
+
+app.get('/show-language', function(req, res){
+     const lang = req.headers['accept-language'];
+     res.send(`Your language preference is ${lang}`)
+})
+
+//---------------------------------------------
+
+
+
+
+
 
 
 
