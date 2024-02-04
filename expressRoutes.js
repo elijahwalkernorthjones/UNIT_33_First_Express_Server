@@ -17,11 +17,11 @@ app.get('/cats', function(req, res) {
 })
 
 app.get('/chickens', function(req, res){
-    res.send('BOCK BOCK (get request')
+    res.send('BOK BOK (get request')
 })
 
 app.post('/chickens', function createChicken(req, res){
-    res.send('YOU MADE A CHICKKKKYYYY (post request)')
+    res.send('we made chikky (post request)')
 })
 
 
