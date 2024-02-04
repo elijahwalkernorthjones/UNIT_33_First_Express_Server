@@ -33,7 +33,10 @@ const greetings = {
     ru: "privet"
 }
 
-
+app.get("/greet/:language", function(req, res){
+    const lang = req.params.language;
+    res.send("Greetings!!!")
+})
 
 
 
